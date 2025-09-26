@@ -1,17 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Assets | Adlai Dyson | Fused Frame Photography</title>
-  <style>
-    body { font-family: sans-serif; padding: 2rem; background: #1e374d; color: #94fdf8; }
-    a { display: block; margin: 0.5rem 0; color: #94fdf8; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN | Adlai Dyson | Fused Frame Photography</title>
+    <style>
+        /* Import custom Aptos fonts */
+        @font-face {
+            font-family: 'Aptos';
+            src: url('https://cdn.fusedframe.co.uk/fonts/aptos/aptos-regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Aptos';
+            src: url('https://cdn.fusedframe.co.uk/fonts/aptos/aptos-bold.woff2') format('woff2');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        /* Basic reset and body styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            font-family: 'Aptos', sans-serif;
+            color: #f0f0f0;
+            background-color: #1a1a1a; /* Fallback color */
+        }
+
+        /* Main container to center content */
+        .main-container {
+            display: flex;
+            flex-direction: column; /* Stack logo and card vertically */
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            width: 100%;
+            padding: 2rem;
+            box-sizing: border-box;
+
+            /* Set the background image */
+            background-image: url('https://cdn.fusedframe.co.uk/main-colours/backgrounds/2160/slight-gradient.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Keeps the background static on scroll */
+        }
+
+        /* Logo styling */
+        .logo {
+            max-width: 300px; /* Adjust size as needed */
+            width: 70%; /* Responsive width */
+            height: auto;
+            margin-bottom: 1.5rem; /* Reduced space between logo and card */
+        }
+
+        /* The content card for better readability */
+        .content-card {
+            background-color: rgba(30, 55, 77, 0.7); /* Semi-transparent #1e374d */
+            backdrop-filter: blur(10px); /* Frosted glass effect */
+            -webkit-backdrop-filter: blur(10px); /* Safari support */
+            padding: 3rem 4rem;
+            border-radius: 1rem; /* Rounded corners */
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        /* Main title styling */
+        h1 {
+            font-weight: bold;
+            font-size: 3rem;
+            margin: 0 0 0.5rem 0;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+            color: #94fdf8;
+        }
+
+        /* Subtitle styling */
+        h2 {
+            font-weight: normal;
+            font-size: 1.5rem;
+            margin: 0 0 1.5rem 0;
+            color: #94fdf8;
+            letter-spacing: 0.5px;
+        }
+        
+        /* Divider line */
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
+            margin: 2rem 0;
+        }
+
+        /* Footer link styling */
+        .footer-links p {
+            margin: 0.75rem 0 0;
+        }
+
+        .footer-links a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #94fdf8;
+            text-decoration: underline;
+        }
+
+        /* Button Container Styling */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem; /* Space between buttons */
+            margin-top: 2rem; /* Space above buttons */
+            flex-wrap: wrap; /* Allow buttons to wrap on small screens */
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: #94fdf8;
+            color: #1e374d;
+            padding: 0.8rem 1.6rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Aptos', sans-serif;
+            transition: background-color 0.3s ease, color 0.3s ease;
+            border: 2px solid #94fdf8; /* Keep border for consistent size on hover */
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: transparent; /* Or you can use #1e374d if you prefer solid */
+            color: #94fdf8;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .content-card {
+                padding: 2rem 2.5rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content-card {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>📁 Assets (cdn.fusedframe.co.uk)</h1>
-  <a This page is purely used for cosmetic purposes. </a>
-  <a Hosted for use as a Content Delivery Network within Adlai Dyson | Fused Frame Photography. </a>
+
+    <div class="main-container">
+        <!-- Logo -->
+        <img src="https://cdn.fusedframe.co.uk/main-logos/png/Banner%20Logo%20(No%20Circle)%20Light%20(Transparent).png" alt="Fused Frame Logo" class="logo">
+
+        <div class="content-card">
+            <!-- Main Title -->
+            <h1>Content Delivery Network</h1>
+            
+            <!-- Subtitle -->
+            <h2>for Adlai Dyson | Fused Frame Photography</h2>
+            
+            <!-- A subtle visual divider -->
+            <hr>
+            
+            <!-- Additional info -->
+            <div class="footer-links">
+                <p><a href="https://github.com/adlaidyson-ffp/assets" target="_blank" rel="noopener noreferrer">View the 'assets' repo: Click Here</a></p>
+                <p><a href="https://wiki.adlaidyson.co.uk/collection/github-links-A2eZBDAwR7/overview" target="_blank" rel="noopener noreferrer">Internal Asset Links: Click Here</a></p>
+            </div>
+        </div>
+
+        <!-- External Link Buttons -->
+        <div class="button-container">
+            <a href="https://adffp.uk/website" target="_blank" rel="noopener noreferrer" class="btn">Main Website</a>
+            <a href="https://adffp.uk/links" target="_blank" rel="noopener noreferrer" class="btn">All Links</a>
+        </div>
+    </div>
+
 </body>
 </html>
+
