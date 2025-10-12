@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Upper Haugh Weather App & Website</title>
+    <style>
+        /* Import custom Aptos fonts */
+        @font-face {
+            font-family: 'Aptos';
+            src: url('https://cdn.fusedframe.co.uk/fonts/aptos/aptos-regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'Aptos';
+            src: url('https://cdn.fusedframe.co.uk/fonts/aptos/aptos-bold.woff2') format('woff2');
+            font-weight: bold;
+            font-style: normal;
+        }
+
+        /* Basic reset and body styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            min-height: 100%;
+            font-family: 'Aptos', sans-serif;
+            color: #e5e7eb;
+            background-color: #1a1a1a; /* Fallback color */
+        }
+
+        /* Main container to position content */
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start; /* Align items to the top */
+            min-height: 100vh;
+            width: 100%;
+            padding: 2rem;
+            box-sizing: border-box;
+
+            /* Set the background image */
+            background-image: url('https://cdn.fusedframe.co.uk/main-colours/backgrounds/2160/slight-gradient.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Keeps the background static on scroll */
+        }
+
+        /* Logo styling */
+        .logo {
+            max-width: 200px; /* Made the logo smaller */
+            width: 50%;
+            height: auto;
+            margin-bottom: 2rem; /* Space between logo and card */
+        }
+
+        /* The content card for better readability */
+        .content-card {
+            background-color: rgba(30, 55, 77, 0.7); /* Semi-transparent #1e374d */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 2rem 3rem;
+            border-radius: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            max-width: 1100px; /* Increased max-width for a fuller feel */
+            width: 100%;
+            box-sizing: border-box;
+            min-height: 100px; /* Ensure it has a minimum height */
+        }
+
+        /* NEW: Header container for title and image */
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 2rem; /* Space between title and image */
+        }
+
+        /* NEW: Container for just the text in the header */
+        .title-section {
+            flex-grow: 1; /* Allows text to take available space */
+        }
+
+        /* NEW: Styling for the header image */
+        .header-image {
+            max-width: 150px;
+            height: auto;
+            border-radius: 0.75rem; /* Rounded corners for the image */
+        }
+
+        /* Main title placeholder styling */
+        h1 {
+            font-family: 'Aptos', sans-serif;
+            font-weight: bold;
+            font-size: 2.5rem;
+            margin: 0 0 0.75rem 0;
+            color: #94fdf8;
+            letter-spacing: 0.5px;
+        }
+
+        /* Subheading placeholder styling */
+        h2 {
+            font-family: 'Aptos', sans-serif;
+            font-weight: normal;
+            font-size: 1.25rem;
+            margin: 0;
+            color: #94fdf8;
+        }
+
+        /* Body text styling */
+        p {
+            font-family: 'Aptos', sans-serif;
+            font-weight: normal;
+            color: #e5e7eb;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+        
+        /* Faint divider line */
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: rgba(148, 253, 248, 0.2); /* Faint version of the title color */
+            margin: 1.5rem 0;
+        }
+
+        /* NEW: Links section styling */
+        .links-section {
+            text-align: center;
+            padding-top: 0.5rem;
+        }
+
+        .links-section a {
+            color: #94fdf8;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: text-decoration 0.3s ease;
+        }
+
+        .links-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 768px) {
+            .main-container {
+                padding: 1.5rem;
+            }
+            
+            .content-card {
+                padding: 1.5rem 2rem;
+            }
+
+            /* NEW: Stack header items on smaller screens */
+            .card-header {
+                flex-direction: column;
+            }
+
+            .header-image {
+                margin-top: 1.5rem;
+                max-width: 120px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-container {
+                padding: 1rem;
+            }
+
+            .content-card {
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <!-- Logo -->
+        <img src="https://cdn.fusedframe.co.uk/main-logos/png/Banner%20Logo%20(No%20Circle)%20Light%20(Transparent).png" alt="Fused Frame Logo" class="logo">
+
+        <div class="content-card">
+            <div class="card-header">
+                <div class="title-section">
+                    <!-- Title Placeholder -->
+                    <h1>About | Upper Haugh Weather</h1>
+                    <!-- Subheading Placeholder -->
+                    <h2>Read below all about the Upper Haugh Weather App & Website made by Adlai Dyson | Fused Frame Photography.</h2>
+                </div>
+                <!-- Image Placeholder -->
+                <img src="https://raw.githubusercontent.com/adlaidyson-ffp/assets/refs/heads/main/uhweather-app/logos/UHWAPPBannerLogo%20(Transparent).png" alt="Upper-Haugh-Weather_Banner-Logo" class="header-image">
+            </div>
+            
+            <!-- A faint visual divider -->
+            <hr>
+            
+            <!-- Body Text Placeholder -->
+            <p>
+                Welcome to my custom-designed weather app for Upper Haugh and the surrounding areas of Rawmarsh.
+				It provides hourly, daily, and weekly forecasts, along with detailed information cards covering precipitation, humidity, wind, air quality (AQI index), UV index, and both sunrise/sunset and moonrise/moonset times.
+				Any weather warnings issued by the Met Office will also appear in a card.            </p>
+            <p>
+            	The web version can be installed as a Progressive Web App (PWA), allowing you to add it to your home screen and use it just like a native app.		</p>
+            <p>
+                All data is retrieved from a custom backend (uhwappapi.adlaidyson.co.uk/weather), which sources weather information from the OpenWeatherMap API. In testing, it’s proven to be more accurate than many popular apps, such as Apple Weather and BBC Weather.</p>
+            <p>
+                Future updates will include the ability to expand each day within the weekly forecast, plus official native apps for iOS/iPadOS, Android, Windows, and macOS, available through their respective app stores — and more exciting features to come!
+            </p>
+            
+            <!-- A second divider for the links section -->
+            <hr>
+
+            <!-- Links Section -->
+            <div class="links-section">
+                <a href="https://adffp.uk/uhw" target="_blank" rel="noopener noreferrer">Back to Upper Haugh Weather</a>
+                <a href="https://adffp.uk/uhwgithub" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+                <a href="https://adlaidyson.co.uk" target="_blank" rel="noopener noreferrer">Visit Adlai Dyson | Fused Frame Photography</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
